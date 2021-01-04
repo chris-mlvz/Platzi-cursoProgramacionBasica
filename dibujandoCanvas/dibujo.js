@@ -1,5 +1,7 @@
 var d = document.getElementById("dibujito");
 var lienzo = d.getContext("2d");
+var lineas = 30;
+var colorLinea = " #9400D3 ";
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
 {
@@ -11,6 +13,12 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
     lienzo.closePath();
 }
 
-dibujarLinea("pink", 10, 300, 220, 10);
-dibujarLinea("yellow", 300, 10, 10, 220);
-dibujarLinea("red",50,50,200,200);
+for (i=0; i<=300; i+=10)
+{
+    dibujarLinea(colorLinea, 0, i, i, 300);
+    dibujarLinea(colorLinea, 300, 300-i, i, 300);
+    dibujarLinea(colorLinea, 0, 300-i, i, 0);
+    dibujarLinea(colorLinea, 300, 300-i, 300-i, 0);
+
+}
+
