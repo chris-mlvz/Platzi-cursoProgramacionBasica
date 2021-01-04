@@ -11,5 +11,6 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
     lienzo.closePath();
 }
 
-dibujarLinea("pink", 10, 300, 220, 10)
-dibujarLinea("yellow", 300, 10, 10, 220)
+dibujarLinea("pink", 10, 300, 220, 10);
+dibujarLinea("yellow", 300, 10, 10, 220);
+dibujarLinea("red",50,50,200,200);
