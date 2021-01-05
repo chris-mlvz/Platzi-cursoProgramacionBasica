@@ -11,13 +11,13 @@ function dibujoPorClick()
 {   
     let cantidadLineas = parseInt(ancho/texto.value)
     for (i=0; i<=ancho; i+=cantidadLineas)
-    
+    {
         dibujarLinea(colorLinea, 0, i, i, ancho);
         dibujarLinea(colorLinea, ancho, ancho-i, i, ancho);
         dibujarLinea(colorLinea, 0, ancho-i, i, 0);
         dibujarLinea(colorLinea, ancho, ancho-i, ancho-i, 0);
     }
-
+}
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
 {
