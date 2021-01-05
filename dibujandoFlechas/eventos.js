@@ -10,8 +10,8 @@ var teclas =
     RIGHT : 39,
     DOWN : 40
 };
-var x = 100;
-var y = 100;
+var x = 150;
+var y = 150;
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
 {
