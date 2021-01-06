@@ -1,4 +1,3 @@
-
 document.addEventListener("keydown", dibujarTeclado)
 var cuadroDibujo = document.getElementById("areaDibujo")
 var papel = cuadroDibujo.getContext("2d")
